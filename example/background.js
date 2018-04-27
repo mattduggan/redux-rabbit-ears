@@ -1,0 +1,2 @@
+ReduxRabbitEars.createExtensionBackgroundProxy();
+

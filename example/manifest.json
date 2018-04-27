@@ -1,0 +1,31 @@
+{
+  "name": "redux-rabbit-ears-example",
+  "version": "0.1.0",
+  "description": "Example extension using redux-rabbit-ears",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "redux-rabbit-ears.js",
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://localhost/*"],
+      "js": [
+        "redux.js",
+        "redux-rabbit-ears.js",
+        "contentScript.js"
+      ]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "*://localhost/*"
+    ]
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
