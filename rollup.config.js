@@ -43,6 +43,12 @@ export default [
                 globals
             },
             {
+                format: 'es',
+                file: 'es/redux-rabbit-ears.js',
+                indent: false,
+                globals
+            },
+            {
                 format: 'iife',
                 file: 'example/redux-rabbit-ears.js',
                 name: 'ReduxRabbitEars',
